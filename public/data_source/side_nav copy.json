@@ -1,0 +1,107 @@
+[
+  {
+    "name": "Dashboard",
+    "icon": "icon-home4",
+    "url": "index.php"
+  },
+  {
+    "name": "Categories",
+    "icon": "icon-list",
+    "subnav": [
+      {
+        "name": "Add Category",
+        "url": "category.create"
+      },
+      {
+        "name": "Categories",
+        "url": "category.index"
+      }
+    ]
+  },
+  {
+    "name": "Products",
+    "icon": "icon-grid4",
+    "subnav": [
+      {
+        "name": "Add Product",
+        "url": ""
+      },
+      {
+        "name": "Products",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "name": "Outdoor Place",
+    "icon": "icon-exit3",
+    "subnav": [
+      {
+        "name": "Add Outdoor Place",
+        "url": ""
+      },
+      {
+        "name": "Outdoors",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "name": "Orders",
+    "icon": "icon-compose",
+    "subnav": [
+      {
+        "name": "Add Order",
+        "url": ""
+      },
+      {
+        "name": "Orders",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "name": "Settings",
+    "icon": "icon-cogs",
+    "subnav": [
+      {
+        "name": "Add User",
+        "url": ""
+      },
+      {
+        "name": "Users",
+        "url": ""
+      },
+      {
+        "name": "User Roles",
+        "url": ""
+      },
+      {
+        "name": "Permitions",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "name": "App configuration",
+    "icon": "icon-android",
+    "subnav": [
+      {
+        "name": "App Config",
+        "url": ""
+      },
+      {
+        "name": "Slider Images",
+        "url": ""
+      },
+      {
+        "name": "Privecy And Policy Page",
+        "url": ""
+      },
+      {
+        "name": "About Page",
+        "url": ""
+      }
+    ]
+  }
+]

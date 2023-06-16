@@ -1,0 +1,21 @@
+[
+  {
+    "name": "Dashboard",
+    "icon": "icon-home4",
+    "url": "index.php"
+  },
+  {
+    "name": "Categories",
+    "icon": "icon-list",
+    "subnav": [
+      {
+        "name": "Add Category",
+        "url": "category/create"
+      },
+      {
+        "name": "Categories",
+        "url": "category"
+      }
+    ]
+  }
+]
