@@ -5,7 +5,7 @@
     <div class="content">
         <div class="card-body">
             <div class="card-header header-elements-inline">
-                <h5 class="card-title">Products</h5>
+                <h5 class="card-title">Category</h5>
                 <a href="{{ route('category.create') }}" class="btn btn-info legitRipple">Add Category</a>
             </div>
             <ul class="nav nav-tabs mb-0">
@@ -134,7 +134,44 @@
                         <a href="products_excel_download.php" class="btn border"><i class="icon-download"></i> Excel</a>
                     </div>
                     <div class="row mx-o">
+                            @foreach ($categories as $category)
+                            <div class="col-sm-6 col-xl-3">
+                                <div class="card">
+                                    <div class="card-img-actions mx-1 mt-1">
+                                        <img class="card-img img-fluid"
+                                             src="{{ $category['image'] }}"
+                                             alt="{{ $category['alt'] }}" style="height:300px; width=100%">
+                                    </div>
 
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-start flex-nowrap">
+                                            <div>
+                                                <div class="font-weight-semibold mr-2">
+                                                    {{ $category['name'] }}
+                                                </div>
+                                                <span class="font-size-sm text-muted">
+                                                    {{ $category['description'] }}
+                                                    </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between p-3">
+                                        <a class="btn border rounded-round mx-1"
+                                           href="show_product.php?id=<?= $category['id'] ?>"><i
+                                                    class="icon-eye text-primary"></i></a>
+                                        <a href="edit_product.php?id=<?= $category['id']  ?>"
+                                           class="btn border rounded-round mx-1"><i
+                                                    class="icon-pencil text-info"></i></a>
+                                        <form action="DeleteProductController.php" method="post" onclick="return confirm('Are you sure you want to delete this item')">
+                                            <input type="hidden" name="id" value="<?= $category['id']  ?>">
+                                            <input type="hidden" name="old_image" value="<?= $category['id']  ?>">
+                                            <button class="btn border rounded-round mx-1"><i
+                                                        class="icon-trash text-danger"></i></button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            @endforeach
                     </div>
                 </div>
                 <!-- Grid View End -->
