@@ -2,7 +2,7 @@
   {
     "name": "Dashboard",
     "icon": "icon-home4",
-    "url": "index.php"
+    "url": "dashboard"
   },
   {
     "name": "Categories",
@@ -10,11 +10,11 @@
     "subnav": [
       {
         "name": "Add Category",
-        "url": "category/create"
+        "url": "category.create"
       },
       {
         "name": "Categories",
-        "url": "category"
+        "url": "category.index"
       }
     ]
   }

@@ -5,7 +5,7 @@
     <div class="content">
         <div class="card-body">
             <div class="card-header header-elements-inline">
-                <h5 class="card-title">Category</h5>
+                <h5 class="card-title">Category </h5>
                 <a href="{{ route('category.create') }}" class="btn btn-info legitRipple">Add Category</a>
             </div>
             <ul class="nav nav-tabs mb-0">
