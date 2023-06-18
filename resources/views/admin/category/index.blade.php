@@ -181,4 +181,4 @@
 
     </div>
     <!-- /content area -->
-@stop
+@endsection
