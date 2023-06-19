@@ -8,9 +8,11 @@ use Illuminate\View\Component;
 
 class image_uploder extends Component
 {
+    public $label = null;
     public $name = null;
-    public function __construct($name)
+    public function __construct($label, $name)
     {
+        $this->label = $label;
         $this->name = $name;
     }
 

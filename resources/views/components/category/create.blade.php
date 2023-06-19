@@ -1,38 +1,17 @@
 <div class="content">
     {{$slot}}
-    <form action="">
-        <x-form.input name="Name" type="text" placeholder="Enter Category Name...."/>
-        <x-form.input name="Type" type="text" placeholder="Enter Category Type...."/>
+    <form method="post" action="{{ route('category.store') }}" enctype="mulpipart/form-data">
+        @csrf
+        <x-form.input label="Name" name="name" type="text" placeholder="Enter Category Name...."/>
+        <x-form.input label="Type" name="type" type="text" placeholder="Enter Category Type...."/>
 
-        <x-form.textarea name="Description" type="text"/>
+        <x-form.textarea label="Description" name="description" type="text"/>
 
-        <x-form.image_uploder name="Image"/>
+        <x-form.image_uploder label="Image" name="image"/>
 
-        <div class="form-group row">
-            <label class="col-form-label col-lg-2">E-sale Enabled</label>
-            <div class="col-lg-10">
-                <div class="form-check form-check-switchery form-check-switchery-double">
-                    <label class="form-check-label">
-                        Enable
-                        <input type="checkbox" class="form-check-input-switchery" checked="Enable" data-fouc="" data-switchery="true" style="display: none;">
-                        Disable
-                    </label>
-                </div>
-            </div>
-        </div>
+        <x-form.checkbox label="E-sale Enabled" name="e-sale" checked="checked"/>
 
-        <div class="form-group row">
-            <label class="col-form-label col-lg-2">Outdoor Enabled</label>
-            <div class="col-lg-10">
-                <div class="form-check form-check-switchery form-check-switchery-double">
-                    <label class="form-check-label">
-                        Enable
-                        <input type="checkbox" class="form-check-input-switchery" checked="Enable" data-fouc="" data-switchery="true" style="display: none;">
-                        Disable
-                    </label>
-                </div>
-            </div>
-        </div>
+        <x-form.checkbox label="Outdoor Enabled" name="outdoor"  checked="checked"/>
 
         <div class="ps-5">
             <div class="text-start">

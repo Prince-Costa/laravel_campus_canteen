@@ -12,7 +12,6 @@ class CategoryController extends Controller
      */
     public function index()
     {
-
         $categories = Category::whereStatus('Active')->whereTrash('Inactive')->get();
         return view('admin.category.index', compact('categories'));
     }
@@ -30,7 +29,7 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        dd($request->all());
     }
 
     /**

@@ -8,3 +8,4 @@ Route::get('/', function () {
 })->name('dashboard');
 
 Route::resource('/category', CategoryController::class);
+
