@@ -1,6 +1,4 @@
-@extends('admin.layout.index')
-
-@section('content')
+<x-layouts.master>
     <!-- Content area -->
     <div class="content">
         <div class="card-body">
@@ -181,4 +179,4 @@
 
     </div>
     <!-- /content area -->
-@endsection
+</x-layouts.master>

@@ -1,23 +1,7 @@
-{{-- @extends('admin.layout.index')
-
-@section('content')
-    {{-- <!-- Content area -->
+<x-layouts.master>
+    <!-- content area -->
+        <h3 class="p-3">Create Category</h3>
         <x-category.create>
-            <h3>Add Category</h3>
         </x-category.create>
-    <!-- /content area --> --}}
-{{-- @endsection --}}
-
-
-
-
-@extends('admin.layout.index')
-
-@section('content')
-    <!-- Content area -->
-    <div class="content">
-       hi
-
-    </div>
     <!-- /content area -->
-@endsection
+</x-layouts.master>

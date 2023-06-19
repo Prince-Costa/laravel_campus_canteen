@@ -1,6 +1,4 @@
-@extends('admin.layout.index')
-
-@section('content')
+<x-layouts.master>
 <!-- Content area -->
 <div class="content">
 
@@ -1991,4 +1989,4 @@
 
 </div>
 <!-- /content area -->
-@stop
+</x-layouts.master>
