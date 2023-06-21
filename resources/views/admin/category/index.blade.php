@@ -155,17 +155,14 @@
                                     </div>
                                     <div class="d-flex justify-content-between p-3">
                                         <a class="btn border rounded-round mx-1"
-                                           href="show_product.php?id=<?= $category['id'] ?>"><i
+                                           href="{{ route('category.show',$category['id']) }}"><i
                                                     class="icon-eye text-primary"></i></a>
                                         <a href="edit_product.php?id=<?= $category['id']  ?>"
                                            class="btn border rounded-round mx-1"><i
                                                     class="icon-pencil text-info"></i></a>
-                                        <form action="DeleteProductController.php" method="post" onclick="return confirm('Are you sure you want to delete this item')">
-                                            <input type="hidden" name="id" value="<?= $category['id']  ?>">
-                                            <input type="hidden" name="old_image" value="<?= $category['id']  ?>">
-                                            <button class="btn border rounded-round mx-1"><i
-                                                        class="icon-trash text-danger"></i></button>
-                                        </form>
+
+                                        <a  class="btn border rounded-round mx-1"><i class="icon-trash text-danger"></i></a>
+
                                     </div>
                                 </div>
                             </div>
