@@ -1,0 +1,12 @@
+[
+    {
+        "title":"Home",
+        "url":"home"
+    },{
+        "title":"Log In",
+        "url":"login"
+    },{
+        "title":"Register",
+        "url":"register"
+    }
+]

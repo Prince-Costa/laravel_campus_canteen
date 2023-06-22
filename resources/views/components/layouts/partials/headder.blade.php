@@ -86,7 +86,8 @@
 
                 <div class="dropdown-menu dropdown-menu-right dropdown-content wmin-md-350">
                     <div class="dropdown-content-header">
-                        <span class="font-size-sm line-height-sm text-uppercase font-weight-semibold">Latest activity</span>
+                        <span class="font-size-sm line-height-sm text-uppercase font-weight-semibold">Latest
+                            activity</span>
                         <a href="#" class="text-default"><i class="icon-search4 font-size-base"></i></a>
                     </div>
 
@@ -94,40 +95,48 @@
                         <ul class="media-list">
                             <li class="media">
                                 <div class="mr-3">
-                                    <a href="#" class="btn bg-success-400 rounded-round btn-icon"><i class="icon-mention"></i></a>
+                                    <a href="#" class="btn bg-success-400 rounded-round btn-icon"><i
+                                            class="icon-mention"></i></a>
                                 </div>
 
                                 <div class="media-body">
-                                    <a href="#">Taylor Swift</a> mentioned you in a post "Angular JS. Tips and tricks"
+                                    <a href="#">Taylor Swift</a> mentioned you in a post "Angular JS. Tips and
+                                    tricks"
                                     <div class="font-size-sm text-muted mt-1">4 minutes ago</div>
                                 </div>
                             </li>
 
                             <li class="media">
                                 <div class="mr-3">
-                                    <a href="#" class="btn bg-pink-400 rounded-round btn-icon"><i class="icon-paperplane"></i></a>
+                                    <a href="#" class="btn bg-pink-400 rounded-round btn-icon"><i
+                                            class="icon-paperplane"></i></a>
                                 </div>
 
                                 <div class="media-body">
-                                    Special offers have been sent to subscribed users by <a href="#">Donna Gordon</a>
+                                    Special offers have been sent to subscribed users by <a href="#">Donna
+                                        Gordon</a>
                                     <div class="font-size-sm text-muted mt-1">36 minutes ago</div>
                                 </div>
                             </li>
 
                             <li class="media">
                                 <div class="mr-3">
-                                    <a href="#" class="btn bg-blue rounded-round btn-icon"><i class="icon-plus3"></i></a>
+                                    <a href="#" class="btn bg-blue rounded-round btn-icon"><i
+                                            class="icon-plus3"></i></a>
                                 </div>
 
                                 <div class="media-body">
-                                    <a href="#">Chris Arney</a> created a new <span class="font-weight-semibold">Design</span> branch in <span class="font-weight-semibold">Limitless</span> repository
+                                    <a href="#">Chris Arney</a> created a new <span
+                                        class="font-weight-semibold">Design</span> branch in <span
+                                        class="font-weight-semibold">Limitless</span> repository
                                     <div class="font-size-sm text-muted mt-1">2 hours ago</div>
                                 </div>
                             </li>
 
                             <li class="media">
                                 <div class="mr-3">
-                                    <a href="#" class="btn bg-purple-300 rounded-round btn-icon"><i class="icon-truck"></i></a>
+                                    <a href="#" class="btn bg-purple-300 rounded-round btn-icon"><i
+                                            class="icon-truck"></i></a>
                                 </div>
 
                                 <div class="media-body">
@@ -138,7 +147,8 @@
 
                             <li class="media">
                                 <div class="mr-3">
-                                    <a href="#" class="btn bg-warning-400 rounded-round btn-icon"><i class="icon-comment"></i></a>
+                                    <a href="#" class="btn bg-warning-400 rounded-round btn-icon"><i
+                                            class="icon-comment"></i></a>
                                 </div>
 
                                 <div class="media-body">
@@ -149,7 +159,8 @@
 
                             <li class="media">
                                 <div class="mr-3">
-                                    <a href="#" class="btn bg-teal-400 rounded-round btn-icon"><i class="icon-spinner11"></i></a>
+                                    <a href="#" class="btn bg-teal-400 rounded-round btn-icon"><i
+                                            class="icon-spinner11"></i></a>
                                 </div>
 
                                 <div class="media-body">
@@ -161,20 +172,28 @@
                     </div>
 
                     <div class="dropdown-content-footer bg-light">
-                        <a href="#" class="font-size-sm line-height-sm text-uppercase font-weight-semibold text-grey mr-auto">All activity</a>
+                        <a href="#"
+                            class="font-size-sm line-height-sm text-uppercase font-weight-semibold text-grey mr-auto">All
+                            activity</a>
                         <div>
-                            <a href="#" class="text-grey" data-popup="tooltip" title="Clear list"><i class="icon-checkmark3"></i></a>
-                            <a href="#" class="text-grey ml-2" data-popup="tooltip" title="Settings"><i class="icon-gear"></i></a>
+                            <a href="#" class="text-grey" data-popup="tooltip" title="Clear list"><i
+                                    class="icon-checkmark3"></i></a>
+                            <a href="#" class="text-grey ml-2" data-popup="tooltip" title="Settings"><i
+                                    class="icon-gear"></i></a>
                         </div>
                     </div>
                 </div>
             </li>
 
             <li class="nav-item">
-                <a href="#" class="navbar-nav-link">
+                <a href="{{ route('logout') }}" class="navbar-nav-link"
+                onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                     <i class="icon-switch2"></i>
                     <span class="d-md-none ml-2">Logout</span>
                 </a>
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                    @csrf
+                </form>
             </li>
         </ul>
     </div>
